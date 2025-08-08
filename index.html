@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Brianna's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#portfolio-section">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5" id="portfolio-section">
+        <h1 class="text-center text-white">My Projects</h1>
+        <p class="text-center text-white mb-5">Welcome to my portfolio page, I am Brianna Titong. I am a 3rd Year Computer Science student in DLSL.</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4 portfolio-section-container">
+            <div class="col">
+                <div class="card project-card">
+                    <img src="images/Screenshot 2025-08-07 163116.png" class="card-img-top" alt="Project 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">BigChadGuysPlus Gameplay Video</h5>
+                        <p class="card-text">Recorded and edited a video playing a minecraft modpack called "BigChadGuysPlus".</p>
+                        <button type="button" class="project-button" data-modal-target="#project1Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card project-card">
+                    <img src="images/cooking-video.png" class="card-img-top" alt="Project 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Cooking Video</h5>
+                        <p class="card-text">This was a video I made for my TLE classes back in junior high.</p>
+                        <button type="button" class="project-button" data-modal-target="#project2Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card project-card">
+                    <img src="images/christmasvid.png" class="card-img-top" alt="Project 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Christmas Song Cover</h5>
+                        <p class="card-text">A cover of a christmas song I made during Senior Highschool.</p>
+                        <button type="button" class="project-button" data-modal-target="#project3Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="project1Modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-header">
+                <h5 class="modal-title">BigChadGuysPlus Gameplay Video Details</h5>
+            </div>
+            <div class="modal-body">
+                <p><strong>Description:</strong> Recorded and edited a video playing a minecraft modpack called "BigChadGuysPlus".
+                I was joined by a friend to play this modpack. The video is basically a compilation of funny moments with edited in memes and background music to fit the vibe. </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="project2Modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-header">
+                <h5 class="modal-title">Cooking Video Details</h5>
+            </div>
+            <div class="modal-body">
+                <p><strong>Description:</strong>This was a video I made for my TLE classes back in junior high. I was tasked to make a main course and a side dish. I cooked bistek with eggpant and boiled eggs. I also made nachoes for the side dish.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="project3Modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-header">
+                <h5 class="modal-title">Christmas Song Cover Details</h5>
+            </div>
+            <div class="modal-body">
+                <p><strong>Description:</strong> A cover of a christmas song. I entered a virtual talent show during my senior high christmas party through zoom.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5" id="contact-section">
+        <div class="contact-form p-5">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
